@@ -112,7 +112,7 @@ Token getToken(FILE *fp) {
             case '(': token.type = 27; strcpy(token.value, "("); break;
             case ')': token.type = 28; strcpy(token.value, ")"); break;
             case '#': token.type = 0; strcpy(token.value, "#"); break;
-            default: token.type = -2; strcpy(token.value, "ERROR");break; // 无法识别的字符
+            default: token.type = -2; strcpy(token.value, "ERROR");break;
         }
 
     }
